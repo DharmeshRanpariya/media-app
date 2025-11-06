@@ -68,7 +68,11 @@ export default function Header() {
 
         {/* ✅ Mobile Menu Toggle */}
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? (
+            <X size={24} />
+          ) : (
+            <Menu size={24} className="text-black" />
+          )}
         </button>
       </div>
 

@@ -20,7 +20,7 @@ export default function Header() {
 
         {/* ✅ Search */}
         <div className="hidden md:flex items-center bg-gray-100 rounded-full px-3 py-1 w-1/2">
-          <Search size={18} className="text-gray-500" />
+          <Search size={18} className="text-black" />
           <input
             type="text"
             placeholder="Search..."
@@ -77,11 +77,11 @@ export default function Header() {
         <div className="md:hidden bg-white border-t p-4 space-y-4">
           {/* Mobile Search */}
           <div className="flex items-center bg-gray-100 rounded-full px-3 py-2">
-            <Search size={18} className="text-gray-500" />
+            <Search size={18} className="text-black" />
             <input
               type="text"
               placeholder="Search..."
-              className="bg-transparent outline-none px-2 w-full"
+              className="bg-transparent outline-none px-2 w-full text-black placeholder-black"
             />
           </div>
 
@@ -89,7 +89,7 @@ export default function Header() {
           <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center justify-between w-full bg-gray-100 px-4 py-2 rounded-lg"
+              className="flex items-center justify-between w-full bg-gray-100 px-4 py-2 rounded-lg text-black"
             >
               <span>Select Category</span>
               <ChevronDown
@@ -105,7 +105,7 @@ export default function Header() {
                   <button
                     key={item}
                     onClick={() => setDropdownOpen(false)}
-                    className="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    className="w-full text-left px-4 py-2 text-black hover:bg-gray-100"
                   >
                     {item}
                   </button>
@@ -116,8 +116,8 @@ export default function Header() {
 
           {/* ✅ Mobile Account Button */}
           <button className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-lg">
-            <User className="w-6 h-6 text-gray-700" />
-            My Account
+            <User className="w-6 h-6 text-black" />
+            <span className="text-black">My Account</span>
           </button>
         </div>
       )}
